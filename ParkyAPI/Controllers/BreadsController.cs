@@ -25,7 +25,8 @@ namespace ParkyAPI.Controllers
         }
 
         [HttpGet("[action]")]
-        //[HttpGet]
+        [ProducesResponseType(200, Type = typeof(List<NationalParkDto>))]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> GetBreads()
         {
             var breads =await _breadRepository.GetBreads();
