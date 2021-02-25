@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ParkyAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ParkyAPI.Controllers.BreadsController.GetBread(System.Int32)">
+            <summary>
+            Get Individual Bread
+            </summary>
+            <param name="breadId">The Id of the Bread</param>
+            <param name="breadDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.BreadsController.CreateBread(ParkyAPI.Models.Dtos.BreadDto)">
+            <summary>
+            Get List of Breads
+            </summary>
+            <param name="breadDto"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
