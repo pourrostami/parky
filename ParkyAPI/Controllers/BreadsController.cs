@@ -46,6 +46,10 @@ namespace ParkyAPI.Controllers
         /// <param name="breadDto"></param>
         /// <returns></returns>
         [HttpGet("[action]/{breadId:int}")]
+        [ProducesResponseType(200, Type = typeof(NationalParkDto))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesDefaultResponseType]
         public async Task<IActionResult> GetBread(int breadId)
         {
             Bread bread =await _breadRepository.GetBread(breadId);
